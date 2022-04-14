@@ -610,7 +610,7 @@ function lib:Window(title, version)
 			Button.Name = "Button"
 			Button.Parent = ButtonHolder
 			Button.AnchorPoint = Vector2.new(0.5, 0.5)
-			Button.BackgroundColor3 = Color3.fromRGB(45, 43, 50)
+			Button.BackgroundColor3 = Color3.fromRGB(47, 46, 52)
 			Button.BorderSizePixel = 0
 			Button.Position = UDim2.new(0.5, 0, 0.5, 0)
 			Button.Size = UDim2.new(0, 450,0, 28)
