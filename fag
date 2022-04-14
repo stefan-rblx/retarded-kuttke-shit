@@ -840,7 +840,7 @@ function lib:Window(title, version)
 			SliderValue.Position = UDim2.new(0, 340,0, 3)
 			SliderValue.Size = UDim2.new(0, 99, 0, 20)
 			SliderValue.Font = Enum.Font.GothamSemibold
-			SliderValue.Text = "50"
+			SliderValue.Text = ""
 			SliderValue.TextColor3 = Color3.fromRGB(238, 238, 238)
 			SliderValue.TextSize = 12.000
 			SliderValue.TextWrapped = true
