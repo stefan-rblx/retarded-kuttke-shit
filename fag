@@ -1115,6 +1115,7 @@ function lib:Window(title, version)
 			ParagraphContent.TextXAlignment = Enum.TextXAlignment.Left
 			ParagraphContent.TextYAlignment = Enum.TextYAlignment.Top
 			
+			end
 			function pages:divider(title, content)
 			local divider = Instance.new("Frame")
 			divider.Name = "Divider"
@@ -1164,7 +1165,6 @@ function lib:Window(title, version)
 			dividercontent.TextWrapped = true
 			dividercontent.TextXAlignment = Enum.TextXAlignment.Left
 			dividercontent.TextYAlignment = Enum.TextYAlignment.Top
-			end
 		end
 		return pages
 	end
