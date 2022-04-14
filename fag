@@ -1114,6 +1114,57 @@ function lib:Window(title, version)
 			ParagraphContent.TextWrapped = true
 			ParagraphContent.TextXAlignment = Enum.TextXAlignment.Left
 			ParagraphContent.TextYAlignment = Enum.TextYAlignment.Top
+			
+			function pages:divider(title, content)
+			local divider = Instance.new("Frame")
+			divider.Name = "Divider"
+			divider.Parent = Page
+			divider.AnchorPoint = Vector2.new(0.5, 0.5)
+			divider.BackgroundColor3 = Color3.fromRGB(45, 43, 50)
+			divider.BackgroundTransparency = 0
+			divider.BorderSizePixel = 0
+			divider.Position = UDim2.new(0.511156619, 0, 0.354497343, 0)
+			divider.Size = UDim2.new(0, 450, 0, 4)
+			
+			local dividercorner = Instance.new("UICorner")
+			dividercorner.CornerRadius = UDim.new(0, 6)
+			dividercorner.Name = "DividerCorner"
+			dividercorner.Parent = divider
+			
+			local dividertitle = Instance.new("TextLabel")
+			dividertitle.Name = "DividerTitle"
+			dividertitle.Parent = divider
+			dividertitle.AnchorPoint = Vector2.new(0.5, 0.5)
+			dividertitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			dividertitle.BackgroundTransparency = 1.000
+			dividertitle.BorderSizePixel = 0
+			dividertitle.Position = UDim2.new(0.39130789, 0, 0.239999801, 0)
+			dividertitle.Size = UDim2.new(0, 333, 0, 13)
+			dividertitle.Font = Enum.Font.GothamBold
+			dividertitle.Text = title
+			dividertitle.TextColor3 = Color3.fromRGB(238, 238, 238)
+			dividertitle.TextScaled = true
+			dividertitle.TextSize = 12.000
+			dividertitle.TextWrapped = true
+			dividertitle.TextXAlignment = Enum.TextXAlignment.Left
+			
+			local dividercontent = Instance.new("TextLabel")
+			dividercontent.Name = "DividerContent"
+			dividercontent.Parent = divider
+			dividercontent.AnchorPoint = Vector2.new(0.5, 0.5)
+			dividercontent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			dividercontent.BackgroundTransparency = 1.000
+			dividercontent.BorderSizePixel = 0
+			dividercontent.Position = UDim2.new(0.480858088, 0, 0.672698975, 0)
+			dividercontent.Size = UDim2.new(0, 416, 0, 43)
+			dividercontent.Font = Enum.Font.GothamSemibold
+			dividercontent.Text = content
+			dividercontent.TextColor3 = Color3.fromRGB(200, 200, 200)
+			dividercontent.TextSize = 12.000
+			dividercontent.TextWrapped = true
+			dividercontent.TextXAlignment = Enum.TextXAlignment.Left
+			dividercontent.TextYAlignment = Enum.TextYAlignment.Top
+			end
 		end
 		return pages
 	end
