@@ -144,7 +144,7 @@ function lib:Window(title, version)
 	MainOverlay.Size = UDim2.new(0, 481, 0, 295)
 	MainOverlay.Image = "rbxassetid://5968284166"
 	MainOverlay.ImageColor3 = Color3.fromRGB(209, 93, 93)
-	MainOverlay.ImageTransparency = 0.800
+	MainOverlay.ImageTransparency = 0.65
 	
 	local MainOverlayCorner = Instance.new("UICorner")
 	MainOverlayCorner.Name = "MainOverlayCorner"
